@@ -1,0 +1,9 @@
+---
+galaxy_info:
+  author: Piwik PRO
+  description: Role created to register and subscribe RedHat license on host
+  license: BSD
+  min_ansible_version: 2.4.0.0
+  platforms:
+    - name: EL
+dependencies: []
