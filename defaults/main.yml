@@ -1,3 +1,4 @@
 ---
 redhat_username: "{{ vault_redhat_username | default('')}}"
 redhat_password: "{{ vault_redhat_password | default('')}}"
+redhat_license_enabled: true
