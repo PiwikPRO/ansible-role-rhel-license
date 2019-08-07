@@ -1,7 +1,9 @@
 ---
-- name: Register and auto-subscribe to available content.
-  redhat_subscription:
-    state: present
-    username: "{{ redhat_username }}"
-    password: "{{ redhat_password }}"
-    autosubscribe: true
+
+- name: "Check if subscription should be enabled"
+  include_tasks: install.yml
+  when: redhat_subscription_enabled
+
+- name: "Check if subscription should be disabled"
+  include_tasks: uninstall.yml
+  when: not redhat_subscription_enabled
