@@ -5,3 +5,4 @@
 It takes two variables:
 * redhat_username - Username of account to which system will be registered and from which license will be taken
 * redhat_password - Password of account to which system will be registered and from which license will be taken
+* redhat_license_enabled - Specifies if the license should be enabled or disabled

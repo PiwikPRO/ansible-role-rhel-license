@@ -1,6 +1,6 @@
 ---
 
-- name: Register and auto-subscribe to available content.
+- name: Unregister from the license and subscription.
   redhat_subscription:
     state: absent
     username: "{{ redhat_username }}"
